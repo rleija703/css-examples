@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #303030;
+  font-family: helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 56px;
+  margin: 15px 5px;
+  color: white;
+}
+
+.wrapper {
+  margin: 50px auto;
+  max-width: 640px;
+}
+
+.container {
+  padding: 16px;
+  border: 4px solid white;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.color1 {
+  background-color: red;
+}
+
+.color2 {
+  background-color: #9c27b0;
+}
+
+.color3 {
+  background-color: yellow;
+}
+
+
+.display-none-example .circle {
+  display: inline-block;
+}
+
+.display-none-example:hover > div:nth-child(2){
+  display: none;
+}
+
+.display-block-example span {
+  display: block;
+  margin: 30px auto;
+  float: left;
+}
+
+.display-inline-example span {
+  margin: 30px;
+  padding: 10px;
+}
+
+.display-inline-block-example span {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}
+
+.display-table-example {
+  display: table;
+  width: 100%;
+  height: 400px;
+}
+
+.table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.display-table-example span {
+  display: inline-block;
+}
+
+.display-flex-example {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}

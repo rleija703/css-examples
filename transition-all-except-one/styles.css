@@ -1,0 +1,38 @@
+html,
+body {
+  margin: auto;
+}
+
+html {
+  min-height: 100%;
+  display: flex;
+}
+
+body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: aqua;
+  border: 12px solid coral;
+  height: 300px;
+  width: 300px;
+  box-sizing: border-box;
+
+  /*
+   * You can add multiple transitions in 1 line.
+   * To make a specific CSS property not to transition
+   * give it a duration of 0ms.
+   */
+  transition: all 1s ease-in-out, height 0ms;
+}
+
+.box:hover {
+  background-color: yellow;
+  border-color: steelblue;
+  transform: rotate(180deg);
+  height: 350px;
+}
